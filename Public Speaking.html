@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Speaking</title>
+    <style>
+      .body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 193, 104) 0%,
+          rgb(251, 128, 128) 90%
+        );
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      h1 {
+        text-align: center;
+        border-radius: 15px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        margin: 0px 400px;
+      }
+      h2 {
+        color: brown;
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      .intro {
+        color: black;
+        line-height: 1.2;
+        font-size: 18px;
+      }
+      .main {
+        color: black;
+        line-height: 1.2;
+        font-size: 18px;
+      }
+      ul {
+        font-size: 18px;
+        display: grid;
+      }
+      .end {
+        color: black;
+        line-height: 1.2;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: orangered;
+        border-radius: 10px;
+        color: white;
+        line-height: 1.5;
+        opacity: 0.8;
+        padding: 5px 5px;
+      }
+      button:hover {
+        color: orangered;
+        background-color: white;
+        cursor: pointer;
+        padding: 5px auto;
+        transition: all 250ms ease-in-out;
+        opacity: 0.8;
+      }
+      .footer {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1>PUBLIC SPEAKING</h1>
+    <h2><em>A way of connecting to people directly!</em></h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/583/original/public_speaking.jpg?1686730383"
+    />
+    <p>
+      <span class="intro">
+        Public speaking has been traditionally known as speaking live in front
+        of an audience. Today, with advancing times, public speaking can be also
+        done virtually. Both in-person and virtual public speaking have almost
+        the same challenges besides technical barriers, nonetheless the impact
+        of speaking to an audience remains unmatched as you serve a message
+        through to more people at one and that is the sole purpose of public
+        speaking.
+      </span>
+    </p>
+    <p>
+      <span class="main"> Public speaking has 3 main purposes being: </span>
+    </p>
+    <ul>
+      <li class="inform">To educate👩‍🏫</li>
+      <li class="persuade">To persuade or motivate🏆</li>
+      <li class="entertain">To entertain🤹‍♀️</li>
+    </ul>
+    <div>
+      <p class="end">
+        The common barriers with public speaking are lack of confidence,
+        nervousness or fear of being rejected. All of these barriers are
+        internal and can be overcomed with the help of a mentor and practice
+        over time using a mirror alone and advanced to a small audience then a
+        bigger one.
+      </p>
+    </div>
+    <button>🎤 Start your public speaking journey😃</button>
+    <p class="footer">
+      <strong>
+        This page was built by
+        <a href="https://www.linkedin.com/in/loise-ntengento/" target="_blank">
+          Loise Ntengento
+        </a></strong
+      >
+    </p>
+    <script>
+      alert("Welcome to my page game-changer!😁");
+      function button() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let language = prompt("What language do you speak?");
+
+        if (language.toLowerCase() === "english") {
+          alert(
+            "Thank you " +
+              name +
+              ", " +
+              "You will receive an invitation via email. " +
+              "Meanwhile watch some of our videos on how to start with your public speaking journey🙂"
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              ", " +
+              "please learn English first as it is our primary teaching language. " +
+              "See you back soon🙂"
+          );
+        }
+      }
+      let startJourneyButton = document.querySelector("button");
+      startJourneyButton.addEventListener("click", button);
+    </script>
+  </body>
+</html>
